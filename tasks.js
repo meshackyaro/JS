@@ -14,7 +14,7 @@ function findTheSquaresOfThis(listOfNumbers) {
 
 function distributeBooksTo(members) {
     for (const value of members) {
-        members.book = book;
+        members += books;
     }
 }
 
