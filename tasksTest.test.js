@@ -23,23 +23,7 @@ test("square of numbers in a list", () => {
 })
 
 test("distribute books to members", () => {
-    let members = ["Emily", "Jack", "Sophia", "Daniel"];
-    members = {
-        name: "Emily",
-        book: ""
-    }
-    members = {
-        name: "Jack",
-        book: ""
-    }
-    members = {
-        name: "Sophia",
-        book: ""
-    }
-    members = {
-        name: "Daniel",
-        book: ""
-    }
+    let members = [{name: "Emily", Book: ""}, {name: "Jack", Book: "", name: "Sophia", Book: "", name: "", Book: ""}];
     expect().toEqual()
     let distributedBooks = [{name: "Emily", Book: "Book1"}, {name: "Jack", Book: "Book2", name: "Sophia", Book: "Book3", name: "Daniel", Book: "Book4"}];
     let result = distributedBooks(members, distributedBooks);
