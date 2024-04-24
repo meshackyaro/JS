@@ -26,7 +26,7 @@ test("distribute books to members", () => {
     let members = [{name: "Emily", Book: ""}, {name: "Jack", Book: "", name: "Sophia", Book: "", name: "", Book: ""}];
     expect().toEqual()
     let distributedBooks = [{name: "Emily", Book: "Book1"}, {name: "Jack", Book: "Book2", name: "Sophia", Book: "Book3", name: "Daniel", Book: "Book4"}];
-    let result = distributedBooks(members, distributedBooks);
+    let result = distributedBooks(distributedBooks);
     expect(distributedBooks).toEqual(result);
 })
 
