@@ -28,6 +28,6 @@ test("distribute books to members", () => {
     // let distributedBooks = {Emily: "book1", Jack: "book2", Sophia: "book3", Daniel: "book4"};
     let result = distributeBooksTo(members, books);
     // expect(distributedBooks).toEqual(result);
-    expect(result).toStrictEqual({Emily: "Book1", Jack: "Book2", Sophia: "Book3", Daniel: "ook4"});
+    expect(result).toStrictEqual({Emily: "Book1", Jack: "Book2", Sophia: "Book3", Daniel: "Book4"});
 })
 
