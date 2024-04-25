@@ -12,10 +12,14 @@ function findTheSquaresOfThis(listOfNumbers) {
     return listOfNumbers.map(num * num);
 }
 
-function distributeBooksTo(members) {
-    for (const value of members) {
-        members += books;
+function distributeBooksTo(members, books) {
+        let people = {};
+    for (const [value,entry] of members.entries()) {
+            people[entry]= books[value];
     }
+    return people;
 }
-
-module.exports = {filterHighestScores, improveStudentScores, findTheSquaresOfThis};
+members = ["a1","a2","a3","a4"];
+books = ["b1","b2","b3","b4"];
+console.log(distributeBooksTo(members, books));
+module.exports = {filterHighestScores, improveStudentScores, findTheSquaresOfThis, distributeBooksTo};
